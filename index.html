@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>罪人借着洗礼得洁净 · 海德堡要理问答主日26 · 提多书2:11–3:8</title>
+<meta name="description" content="欧陆改革宗要理讲章：海德堡要理问答主日26（问69–71），读经提多书2:11–3:8。一、借着基督的血；二、借着基督的灵。">
+<meta name="theme-color" content="#0e1a2b">
+<style>
+:root{
+  --ink:#0e1a2b; --ink-soft:#2a3a52; --parchment:#f4ede0; --parch-deep:#e8dcc5;
+  --card:rgba(255,251,244,.9); --card-solid:#fffaf2;
+  --gold:#a6843d; --gold-bright:#e6c57a; --gold-soft:#f8efd6;
+  --crimson:#9b1f33; --crimson-soft:#f8e3e6;
+  --water:#1f6fa8; --water-soft:#e2f0fa;
+  --green:#1d6b44; --green-soft:#e3f3ea;
+  --violet:#5b3f8c; --violet-soft:#efe8f8;
+  --line:rgba(14,26,43,.12); --shadow:0 12px 34px rgba(14,26,43,.09);
+  --header-h:4.2rem; --measure:72ch;
+  --sans:"Source Han Sans SC","Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  --serif:"Noto Serif SC","Songti SC","Source Han Serif SC","STSong","SimSun",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 1rem);-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font-family:var(--serif);font-size:1.07rem;line-height:1.9;overflow-x:hidden;
+  background:radial-gradient(1100px 520px at 8% -10%,rgba(230,197,122,.38),transparent 55%),
+  radial-gradient(900px 480px at 105% 5%,rgba(31,111,168,.13),transparent 52%),
+  radial-gradient(800px 500px at 50% 110%,rgba(29,107,68,.10),transparent 55%),var(--parchment);}
+svg{max-width:100%;height:auto}
+a{color:var(--water)} a:hover{color:var(--crimson)}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:1rem;top:1rem;z-index:90;background:#fff;padding:.4rem .7rem}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;background:linear-gradient(90deg,var(--water),var(--crimson),var(--green),var(--gold-bright))}
+/* header */
+.site-header{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:.7rem;min-height:var(--header-h);
+  padding:.5rem 3vw;color:#f7f1e4;background:rgba(14,26,43,.78);border-bottom:1px solid rgba(230,197,122,.45);
+  backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.site-header,.toc{background:#0e1a2b!important}}
+.brand{display:flex;align-items:center;gap:.6rem;min-width:0;flex:1}
+.brand svg{flex:0 0 auto}
+.brand .t{margin:0;font-family:var(--sans);font-weight:700;font-size:clamp(.95rem,2.3vw,1.2rem);letter-spacing:.04em;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand .s{margin:0;font-family:var(--sans);font-size:.74rem;opacity:.8;letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand>div{min-width:0}
+.icon-btn{font-family:var(--sans);color:#f7f1e4;background:rgba(255,255,255,.08);border:1px solid rgba(230,197,122,.5);
+  border-radius:999px;padding:.38rem .8rem;cursor:pointer;font-size:.82rem;display:inline-flex;align-items:center;gap:.35rem;flex:0 0 auto;transition:background .2s,transform .2s}
+.icon-btn:hover,.icon-btn:focus-visible{background:rgba(230,197,122,.22);outline:none;transform:translateY(-1px)}
+/* layout */
+.layout{display:grid;grid-template-columns:minmax(15rem,20rem) minmax(0,1fr);gap:1.2rem;width:100%;max-width:1680px;margin:0 auto;padding:1rem 2.2vw 4rem}
+.toc{position:sticky;top:calc(var(--header-h) + .7rem);align-self:start;max-height:calc(100vh - var(--header-h) - 1.4rem);overflow:auto;
+  padding:1rem .9rem .9rem;color:#f6f0e4;background:rgba(14,26,43,.80);border:1px solid rgba(230,197,122,.35);border-radius:18px;box-shadow:var(--shadow);
+  backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);overscroll-behavior:contain}
+.toc h2{margin:0 0 .5rem;font-family:var(--sans);font-size:.92rem;color:var(--gold-bright);letter-spacing:.14em;display:flex;justify-content:space-between;align-items:center}
+.toc ol{margin:0;padding-left:1.1rem}
+.toc li{margin:.22rem 0;font-family:var(--sans);font-size:.84rem;line-height:1.45}
+.toc a{color:#eae3d4;text-decoration:none;display:inline-block;padding:.05rem .2rem;border-radius:6px;transition:color .15s,background .15s}
+.toc a:hover{color:var(--gold-bright)}
+.toc a.active{color:var(--ink);background:var(--gold-bright)}
+.toc .sub{padding-left:.9rem;list-style:circle;margin:.1rem 0 .25rem}
+.toc .close{display:none}
+body.toc-hidden .toc{display:none}
+body.toc-hidden .layout{grid-template-columns:minmax(0,1fr)}
+main{min-width:0}
+/* cards */
+.hero,section.card{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:clamp(1rem,2.4vw,2.1rem);margin:0 0 1.1rem;min-width:0;overflow-wrap:anywhere;word-break:normal}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(14,26,43,.96),rgba(36,52,74,.93));color:#f7f1e4;border-color:rgba(230,197,122,.4)}
+.hero h1{font-size:clamp(1.8rem,5vw,3.1rem);line-height:1.25;margin:.2rem 0 .5rem;letter-spacing:.06em}
+.hero .kicker{color:var(--gold-bright)}
+.hero .lede{color:#efe7d6}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:1.2rem;align-items:center}
+.kicker{font-family:var(--sans);letter-spacing:.16em;color:var(--gold);font-size:.8rem;margin:0 0 .3rem}
+h2{font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.35;margin:.15rem 0 .8rem;display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+h3{font-size:1.2rem;margin:1.2rem 0 .45rem;line-height:1.45;display:flex;align-items:center;gap:.45rem;flex-wrap:wrap}
+h4{margin:.8rem 0 .3rem;font-size:1.04rem}
+p,li{max-width:var(--measure)}
+.wide p,.wide li{max-width:none}
+.lede{font-size:1.13rem}
+.ic{width:1.5em;height:1.5em;flex:0 0 auto;vertical-align:-.3em}
+.ic-sm{width:1.1em;height:1.1em;vertical-align:-.18em}
+/* blocks */
+.scripture{margin:.8rem 0;padding:.85rem 1.05rem;border-left:4px solid var(--gold);background:#fffdf8;border-radius:0 14px 14px 0}
+.scripture p{margin:.25rem 0}
+.ref{font-family:var(--sans);font-size:.8rem;letter-spacing:.03em;color:var(--ink-soft)}
+.cat{margin:.8rem 0;border-radius:18px;overflow:hidden;border:1px solid #d8c69a;background:linear-gradient(180deg,#fffaf0,#fbf3e2)}
+.cat .qa{padding:1rem 1.15rem;border-bottom:1px dashed #d8c69a}
+.cat .qa:last-child{border-bottom:0}
+.cat .qn{display:inline-block;font-family:var(--sans);font-weight:700;background:var(--ink);color:var(--gold-bright);border-radius:8px;padding:.05rem .5rem;margin-right:.35rem;font-size:.85rem}
+.cat p{margin:.35rem 0;max-width:none}
+.cat .fn{font-family:var(--sans);font-size:.82rem;color:var(--ink-soft);overflow-wrap:anywhere}
+.loop-tag{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--sans);font-size:.74rem;letter-spacing:.08em;border-radius:999px;padding:.15rem .65rem;margin-bottom:.4rem;background:var(--ink);color:var(--gold-bright)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:.6rem 0}
+.chip{font-family:var(--sans);font-size:.82rem;line-height:1.3;border-radius:999px;padding:.28rem .7rem;border:1px solid transparent;display:inline-flex;align-items:center;gap:.3rem}
+.chip.gold{background:var(--gold-soft);color:#6d5420;border-color:#e2cb90}
+.chip.green{background:var(--green-soft);color:var(--green);border-color:#b7dfc8}
+.chip.crimson{background:var(--crimson-soft);color:var(--crimson);border-color:#e4b7be}
+.chip.water{background:var(--water-soft);color:var(--water);border-color:#b5d6ee}
+.chip.ink{background:#e8eef5;color:var(--ink);border-color:#c9d4e2}
+.chip.violet{background:var(--violet-soft);color:var(--violet);border-color:#d3c3ec}
+mark{padding:0 .2em;border-radius:4px}
+.m-blood{background:var(--crimson-soft);color:var(--crimson);font-weight:700}
+.m-water{background:var(--water-soft);color:var(--water);font-weight:700}
+.m-spirit{background:var(--green-soft);color:var(--green);font-weight:700}
+.m-gold{background:var(--gold-soft);color:#6d5420;font-weight:700}
+.key{border-radius:16px;padding:.85rem 1rem;margin:.9rem 0;border:1px solid;display:grid;grid-template-columns:auto minmax(0,1fr);gap:.7rem;align-items:start}
+.key p{margin:.15rem 0;max-width:none}
+.key.focus{background:var(--gold-soft);border-color:#e2cb90}
+.key.hard{background:var(--violet-soft);border-color:#d3c3ec}
+.key.warn{background:var(--crimson-soft);border-color:#e4b7be}
+.key.grace{background:var(--green-soft);border-color:#b7dfc8}
+.key .lab{font-family:var(--sans);font-size:.75rem;font-weight:700;letter-spacing:.1em}
+.grid-2,.grid-3,.grid-4{display:grid;gap:.85rem}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mini{background:#fffdf8;border:1px solid var(--line);border-radius:16px;padding:.85rem .95rem;min-width:0;transition:transform .25s,box-shadow .25s}
+.mini:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(14,26,43,.1)}
+.mini h3,.mini h4{margin-top:0}
+.mini p,.mini li{max-width:none}
+.mini.blood{background:var(--crimson-soft);border-color:#e7c4ca}
+.mini.water{background:var(--water-soft);border-color:#c0dcef}
+.mini.spirit{background:var(--green-soft);border-color:#c5e4d2}
+.mini.gold{background:var(--gold-soft);border-color:#e9d7a8}
+.table-wrap{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:14px;margin:.7rem 0;-webkit-overflow-scrolling:touch;background:#fffdf8}
+table{width:100%;border-collapse:collapse;font-size:.94rem;min-width:34rem}
+th,td{text-align:left;vertical-align:top;padding:.55rem .7rem;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+th{font-family:var(--sans);font-size:.8rem;letter-spacing:.04em;background:#f3ead8;position:sticky;top:0}
+tr:hover td{background:rgba(230,197,122,.10)}
+.phrase{display:grid;grid-template-columns:minmax(7.5rem,11rem) minmax(0,1fr);gap:.9rem;align-items:start;padding:.8rem 0;border-bottom:1px dashed var(--line)}
+.phrase:last-child{border-bottom:0}
+.phrase .w{font-family:var(--sans);font-weight:700;border-radius:12px;padding:.35rem .6rem;text-align:center}
+.phrase p{margin:.1rem 0;max-width:none}
+details.q{border:1px solid var(--line);border-radius:14px;padding:.6rem .9rem;margin:.6rem 0;background:#fffdf8}
+details.q[open]{box-shadow:0 8px 20px rgba(14,26,43,.07)}
+details.q summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:.5rem;align-items:flex-start}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary .n{flex:0 0 auto;font-family:var(--sans);background:var(--ink);color:var(--gold-bright);border-radius:8px;padding:0 .45rem;font-size:.85rem;margin-top:.25rem}
+.analysis{background:#f6f1e6;border-radius:12px;padding:.7rem .95rem;margin-top:.55rem}
+.analysis p,.analysis li{max-width:none}
+.fig{margin:.8rem 0;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:.6rem;overflow:hidden}
+.fig figcaption{font-family:var(--sans);font-size:.8rem;color:var(--ink-soft);padding:.35rem .4rem 0}
+.fig svg{display:block;width:100%;height:auto}
+.fig text{font-family:var(--sans)}
+.svg-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.svg-scroll svg{min-width:560px}
+.timeline{position:relative;margin:.8rem 0;padding-left:1.4rem;border-left:3px solid var(--gold)}
+.timeline .ev{position:relative;margin:0 0 .9rem}
+.timeline .ev::before{content:"";position:absolute;left:-1.92rem;top:.55rem;width:.9rem;height:.9rem;border-radius:50%;background:var(--card-solid);border:3px solid var(--water)}
+.timeline .ev.b::before{border-color:var(--crimson)} .timeline .ev.s::before{border-color:var(--green)} .timeline .ev.g::before{border-color:var(--gold)}
+.timeline .ev p{margin:.1rem 0}
+.timeline .ev strong{font-family:var(--sans)}
+.mnemonic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin:.8rem 0}
+.mnemonic div{border-radius:16px;padding:.9rem .6rem;text-align:center;font-family:var(--sans);font-weight:700;font-size:1.02rem;line-height:1.5}
+.mnemonic small{display:block;font-weight:400;font-size:.78rem;opacity:.85}
+.closing{background:linear-gradient(135deg,#0e1a2b,#24344a)!important;color:#f7f1e4}
+.closing h2{color:var(--gold-bright)}
+.closing p{color:#efe7d6}
+footer.card{font-family:var(--sans);font-size:.85rem;color:var(--ink-soft)}
+.fine{font-family:var(--sans);font-size:.8rem;color:var(--ink-soft)}
+.backdrop{display:none;position:fixed;inset:0;background:rgba(14,26,43,.45);z-index:45}
+body.drawer-open .backdrop{display:block}
+.to-top{position:fixed;right:1rem;bottom:1rem;z-index:35;width:2.8rem;height:2.8rem;border-radius:50%;border:1px solid rgba(230,197,122,.6);background:rgba(14,26,43,.82);color:var(--gold-bright);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:1.1rem}
+.to-top.show{opacity:1;pointer-events:auto}
+/* animation: drop -> blood -> flame */
+.drop-anim{max-width:340px;margin-inline:auto;width:100%}
+.drop-anim .drop{animation:dropcolor 9s ease-in-out infinite;transform-origin:100px 110px}
+.drop-anim .flame{animation:flame 9s ease-in-out infinite;transform-origin:100px 150px;opacity:0}
+.drop-anim .ring{animation:ring 3s ease-out infinite;transform-origin:100px 170px}
+.drop-anim .lbl{animation:lbl 9s steps(1) infinite}
+@keyframes dropcolor{0%,22%{fill:#2f86c6;transform:scale(1)}33%,55%{fill:#9b1f33;transform:scale(1.04)}66%,88%{fill:#1d6b44;transform:scale(.6) translateY(-30px);opacity:.25}100%{fill:#2f86c6;transform:scale(1);opacity:1}}
+@keyframes flame{0%,60%{opacity:0;transform:scale(.6)}70%,88%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.6)}}
+@keyframes ring{0%{opacity:.7;transform:scale(.3)}100%{opacity:0;transform:scale(1.6)}}
+.flow-anim .dash{stroke-dasharray:6 6;animation:dash 1.6s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-24}}
+.pulse{animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .drop-anim .drop,.drop-anim .flame,.drop-anim .ring,.flow-anim .dash,.pulse{animation:none}
+  .drop-anim .flame{opacity:1}
+  .mini:hover,.icon-btn:hover{transform:none}
+}
+@media (max-width:1279px){.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr);padding:.8rem 2.5vw 3rem}
+  .toc{position:fixed;z-index:50;top:0;left:0;bottom:0;width:min(86vw,21rem);max-height:none;border-radius:0 18px 18px 0;transform:translateX(-105%);transition:transform .28s ease;background:rgba(14,26,43,.92)}
+  body.drawer-open .toc{transform:translateX(0)}
+  body.toc-hidden .toc{display:block}
+  .toc .close{display:inline-flex}
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:767px){
+  body{font-size:1.02rem;line-height:1.85}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:minmax(0,1fr)}
+  .mnemonic{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phrase{grid-template-columns:minmax(0,1fr);gap:.35rem}
+  .phrase .w{justify-self:start}
+  .key{grid-template-columns:minmax(0,1fr)}
+  .brand .s{display:none}
+  .icon-btn .txt{display:none}
+}
+@media print{.site-header,.toc,.to-top,.progress,.backdrop{display:none!important}.layout{display:block}.reveal{opacity:1;transform:none}section.card{break-inside:avoid-page;box-shadow:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.5C9 7 5.5 10.6 5.5 14.6A6.5 6.5 0 0 0 18.5 14.6C18.5 10.6 15 7 12 2.5Z" fill="#2f86c6"/><path d="M9 15.5a3 3 0 0 0 3 3" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-blood" viewBox="0 0 24 24"><path d="M12 2.5C9 7 5.5 10.6 5.5 14.6A6.5 6.5 0 0 0 18.5 14.6C18.5 10.6 15 7 12 2.5Z" fill="#9b1f33"/><path d="M12 9v8M8.5 12.2h7" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2c1 4 5 5.5 5 11a5 5 0 0 1-10 0c0-2.6 1.4-4 2.6-5.2.2 1.8 1 2.9 2.2 3.3C11.4 8.6 11 5.4 12 2Z" fill="#1d6b44"/><path d="M12 13.5c1.4 1 2 2 2 3a2 2 0 0 1-4 0c0-1 .8-2 2-3Z" fill="#9fe0bb"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><rect x="10.3" y="2.5" width="3.4" height="19" rx="1" fill="#a6843d"/><rect x="5" y="7" width="14" height="3.4" rx="1" fill="#a6843d"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3.5 5.2c3-1.2 5.9-1 8.5.8v13.5c-2.6-1.8-5.5-2-8.5-.8Z" fill="#e6c57a"/><path d="M20.5 5.2c-3-1.2-5.9-1-8.5.8v13.5c2.6-1.8 5.5-2 8.5-.8Z" fill="#a6843d"/></symbol>
+    <symbol id="i-seal" viewBox="0 0 24 24"><circle cx="12" cy="10" r="6.5" fill="#9b1f33"/><circle cx="12" cy="10" r="3.6" fill="none" stroke="#fff" stroke-width="1.3"/><path d="M8.5 15.5 7 21.5l5-2.3 5 2.3-1.5-6" fill="#9b1f33"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3.2-3.2a4 4 0 0 0-5.7-5.7L11.8 6.5" stroke="#a6843d" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M14 10a4 4 0 0 0-5.7 0l-3.2 3.2a4 4 0 0 0 5.7 5.7l1.4-1.4" stroke="#1f6fa8" stroke-width="2.2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5S3.5 15 3.5 9.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 8.5 1.8C20.5 15 12 20.5 12 20.5Z" fill="#c9a24c"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2Z" fill="#e2f0fa" stroke="#1f6fa8" stroke-width="1.4"/><path d="M9 4v14M15 6v14" stroke="#1f6fa8" stroke-width="1.2"/></symbol>
+    <symbol id="i-loop" viewBox="0 0 24 24"><path d="M5 12a7 7 0 0 1 12-4.9" stroke="#1d6b44" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M19 12a7 7 0 0 1-12 4.9" stroke="#9b1f33" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M17.5 3.5v4h-4" stroke="#1d6b44" stroke-width="2.2" fill="none"/><path d="M6.5 20.5v-4h4" stroke="#9b1f33" stroke-width="2.2" fill="none"/></symbol>
+    <symbol id="i-q" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="#5b3f8c"/><path d="M9.3 9.3a2.8 2.8 0 1 1 3.8 2.6c-.8.4-1.1.9-1.1 1.8" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="12" cy="17" r="1.1" fill="#fff"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.7 5.7 6.2.8-4.6 4.3 1.2 6.2L12 16.8 6.5 19.8l1.2-6.2L3.1 9.3l6.2-.8Z" fill="#e6c57a" stroke="#a6843d" stroke-width="1"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3 22 20H2Z" fill="#9b1f33"/><path d="M12 9v5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1.1" fill="#fff"/></symbol>
+    <symbol id="i-child" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="3.2" fill="#1f6fa8"/><path d="M6 21c0-4.5 2.7-8 6-8s6 3.5 6 8Z" fill="#1f6fa8"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 17V5l11-2v12" stroke="#a6843d" stroke-width="2" fill="none"/><circle cx="6.5" cy="17.5" r="2.8" fill="#a6843d"/><circle cx="17.5" cy="15.5" r="2.8" fill="#a6843d"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 3.5a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 3 3.5 3 3 0 0 0 3-3V6.5a3 3 0 0 0-3-3Z" fill="#efe8f8" stroke="#5b3f8c" stroke-width="1.4"/><path d="M15 3.5a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-3 3.5 3 3 0 0 1-3-3V6.5a3 3 0 0 1 3-3Z" fill="#e3f3ea" stroke="#1d6b44" stroke-width="1.4"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <button class="icon-btn" id="tocBtn" aria-controls="toc" aria-expanded="true" type="button">☰ <span class="txt">目录</span></button>
+  <div class="brand">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-drop"/></svg>
+    <div>
+      <p class="t">罪人借着洗礼得洁净</p>
+      <p class="s">海德堡要理问答 主日26 · 问69–71 · 提多书2:11–3:8</p>
+    </div>
+  </div>
+  <button class="icon-btn" id="motionBtn" type="button" aria-pressed="false" title="减少动画">✦ <span class="txt">动效</span></button>
+</header>
+<div class="backdrop" id="backdrop"></div>
+
+<div class="layout">
+<nav class="toc" id="toc" aria-label="目录">
+  <h2><span>目 录</span><button class="icon-btn close" id="tocClose" type="button" aria-label="关闭目录">✕</button></h2>
+  <ol>
+    <li><a href="#hero">讲章总览</a></li>
+    <li><a href="#liturgy">礼拜程序与诗歌</a></li>
+    <li><a href="#catechism">要理问答 问69–71 原文</a></li>
+    <li><a href="#background">真实背景</a>
+      <ol class="sub">
+        <li><a href="#bg-titus">提多书：克里特的处境</a></li>
+        <li><a href="#bg-hc">海德堡：1563 年的普法尔茨</a></li>
+        <li><a href="#bg-map">示意地图</a></li>
+        <li><a href="#bg-context">上下文与“为什么写”</a></li>
+      </ol></li>
+    <li><a href="#essence">本质核心：记号·应许·实体</a></li>
+    <li><a href="#wholebible">整本圣经中的“洁净之水”</a></li>
+    <li><a href="#zoom">先整体，后局部：逐字细读</a></li>
+    <li><a href="#head1">第一点：借着基督的血</a></li>
+    <li><a href="#head2">第二点：借着基督的灵</a></li>
+    <li><a href="#onechrist">血与灵：一位基督，不可分开</a></li>
+    <li><a href="#loops">四重闭环</a>
+      <ol class="sub">
+        <li><a href="#loop-history">① 救赎历史闭环</a></li>
+        <li><a href="#loop-covenant">② 圣约神学闭环</a></li>
+        <li><a href="#loop-bt">③ 经文圣经神学闭环</a></li>
+        <li><a href="#loop-reformed">④ 改革宗 罪–恩典–感恩 闭环</a></li>
+      </ol></li>
+    <li><a href="#parallels">平行经文</a></li>
+    <li><a href="#discussion">讨论与答案分析</a></li>
+    <li><a href="#expansion">拓展</a></li>
+    <li><a href="#memorize">速记总结</a></li>
+    <li><a href="#closing">结语与祷告</a></li>
+  </ol>
+</nav>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero reveal" id="hero" aria-labelledby="hero-title">
+  <div class="hero-grid">
+    <div>
+      <p class="kicker">欧陆改革宗 · 主日要理讲道 · 海德堡要理问答 主日26</p>
+      <h1 id="hero-title">罪人借着洗礼得洁净</h1>
+      <p class="lede">读经：提多书 2:11–3:8　｜　要理问答：第69–71问</p>
+      <p class="lede">洗礼的水不过是水；但基督把<mark class="m-water">这外在的水洗</mark>与祂的<mark class="m-gold">应许</mark>连在一起，向我们表明并印证：祂的<mark class="m-blood">宝血</mark>赦免我的罪，祂的<mark class="m-spirit">圣灵</mark>更新我的生命——正如水洗去身体的污秽一样确实。</p>
+      <div class="chips">
+        <span class="chip crimson"><svg class="ic-sm" aria-hidden="true"><use href="#i-blood"/></svg>一、借着基督的血</span>
+        <span class="chip green"><svg class="ic-sm" aria-hidden="true"><use href="#i-flame"/></svg>二、借着基督的灵</span>
+        <span class="chip water"><svg class="ic-sm" aria-hidden="true"><use href="#i-drop"/></svg>水是记号</span>
+        <span class="chip gold"><svg class="ic-sm" aria-hidden="true"><use href="#i-link"/></svg>应许是纽带</span>
+      </div>
+    </div>
+    <figure class="fig drop-anim" style="background:rgba(255,255,255,.06);border-color:rgba(230,197,122,.35)" aria-label="动画：水滴→宝血→圣灵之火">
+      <svg viewBox="0 0 200 210" role="img" aria-labelledby="dropT">
+        <title id="dropT">水滴先是蓝色（记号），转为深红（基督的血），再化为绿色火焰（圣灵更新）</title>
+        <ellipse class="ring" cx="100" cy="170" rx="60" ry="10" fill="none" stroke="#e6c57a" stroke-width="2"/>
+        <path class="drop" d="M100 30C82 62 60 86 60 114a40 40 0 0 0 80 0c0-28-22-52-40-84Z" fill="#2f86c6"/>
+        <g class="flame">
+          <path d="M100 70c6 22 30 30 30 64a30 30 0 0 1-60 0c0-16 8-25 16-32 1 11 6 18 13 20-3-17-5-36 1-52Z" fill="#1d6b44"/>
+          <path d="M100 128c9 6 13 12 13 19a13 13 0 0 1-26 0c0-7 5-13 13-19Z" fill="#9fe0bb"/>
+        </g>
+        <text x="100" y="200" text-anchor="middle" font-size="11" fill="#e6c57a">水 → 血 → 灵（一位基督所应许）</text>
+      </svg>
+      <figcaption style="color:#e6dcc6">记号指向实体：水 → 宝血（赦罪）→ 圣灵（更新）。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- LITURGY -->
+<section class="card reveal" id="liturgy" aria-labelledby="liturgy-h">
+  <p class="kicker">上午礼拜 · 诗歌与经文</p>
+  <h2 id="liturgy-h"><svg class="ic" aria-hidden="true"><use href="#i-music"/></svg>礼拜程序与诗歌如何服事本主日</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>次序</th><th>诗歌 / 经文</th><th>与本讲章的关联（简述，不引歌词）</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>圣诗第23首 1–4节</td><td>开始敬拜。歌词按本堂诗本吟唱，此处不复述。</td></tr>
+        <tr><td>2</td><td>韵诗第24篇</td><td>诗24:3–4 问“谁能登耶和华的山？”答案是“手洁心清的人”。我们不配，所以需要被洁净；诗24:7–10 荣耀的王进来——唯有祂能使我们洁净地站在神面前。</td></tr>
+        <tr><td>3</td><td>韵诗第25篇 1–3节</td><td>“我的心仰望你……凡等候你的必不羞愧”。本诗篇稍后（25:7）求神“不要记念我幼年的罪愆”——这正是“借着基督的血白白赦罪”的祷告。</td></tr>
+        <tr><td>4</td><td>读经：提多书 2:11–3:8</td><td>神的恩典显明 → 重生的洗和圣灵的更新 → 因恩称义、成为后嗣 → 热心行善。</td></tr>
+        <tr><td>5</td><td>要理问答：主日26（问69–71）</td><td>本讲章的骨架。</td></tr>
+        <tr><td>6</td><td>韵诗第1篇（讲道后回应）</td><td>两条道路：被洁净的人不再走罪人的道路，而喜爱耶和华的律法，像树栽在溪水旁——这是“感恩”的生活。</td></tr>
+        <tr><td>7</td><td>圣诗第9首（结束）</td><td>以颂赞结束。歌词按本堂诗本吟唱。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="chips">
+    <span class="chip water">诗24：手洁心清——需要洁净</span>
+    <span class="chip crimson">诗25：求神不记念罪——赦罪</span>
+    <span class="chip green">诗1：溪水旁的树——更新与果子</span>
+  </div>
+</section>
+
+<!-- CATECHISM -->
+<section class="card reveal" id="catechism" aria-labelledby="cat-h">
+  <p class="kicker">海德堡要理问答 · 第二十六主日</p>
+  <h2 id="cat-h"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>要理问答原文（问69–71）</h2>
+  <div class="cat">
+    <div class="qa">
+      <p><span class="qn">69</span><strong>问：洗礼是如何向你表明并印证基督在十字架上一次的献祭于你有益的呢？</strong></p>
+      <p>答：乃是这样：基督设立这外在的水洗（1），并以此应许，他的宝血和圣灵必洗去我灵魂中一切的污秽，即所有的罪，正如水洗去人身体的污秽一样（2）。</p>
+      <p class="fn">（1）太28:19<br>（2）太3:11; 可16:16; 约1:33; 徒2:38; 罗6:3-4; 彼前3:21</p>
+    </div>
+    <div class="qa">
+      <p><span class="qn">70</span><strong>问：受基督宝血和圣灵的洗是什么意思呢？</strong></p>
+      <p>答：受基督宝血的洗是指藉着恩典，因基督在十字架上牺牲而为我们流的宝血，我们白白得蒙神的赦罪（1）。受他圣灵的洗是指我们被圣灵更新，成为圣洁，作基督的肢体，叫我们越来越向罪死，且敬虔度日，无有瑕疵（2）。</p>
+      <p class="fn">（1）结36:25; 亚13:1; 弗1:7; 来12:24; 彼前1:2; 启1:5,7:14<br>（2）约3:5-8; 罗6:4; 林前6:11; 西2:11-12</p>
+    </div>
+    <div class="qa">
+      <p><span class="qn">71</span><strong>问：基督在哪里应许我们，他要用他的宝血与圣灵洗涤我们，正如洗礼的水洗涤我们一样呢？</strong></p>
+      <p>答：在基督设立洗礼时，他说“所以，你们要去使万民作我的门徒，奉父、子、圣灵的名给他们施洗”（太28:19）；“信而受洗的必然得救，不信的必被定罪”（可16:16）。圣经上称洗礼为重生的洗和除罪的洗之处，也都重申了这个应许。（多3:5；徒22:16）</p>
+    </div>
+  </div>
+  <div class="grid-3">
+    <div class="mini water"><h4>问69 · 怎样印证？</h4><p>基督<strong>设立</strong>外在水洗 + <strong>应许</strong>：血与灵洗净灵魂，“正如”水洗身体。</p></div>
+    <div class="mini blood"><h4>问70 · 什么意思？</h4><p><strong>血</strong>＝白白赦罪；<strong>灵</strong>＝更新成圣、作肢体、向罪死、敬虔度日。</p></div>
+    <div class="mini gold"><h4>问71 · 应许在哪？</h4><p>太28:19、可16:16 设立；多3:5“重生的洗”、徒22:16“洗去你的罪”重申。</p></div>
+  </div>
+  <div class="key warn"><svg class="ic" aria-hidden="true"><use href="#i-warn"/></svg><div><p class="lab">难点提醒 · 接着读问72</p><p>紧接着的第72问（主日27）立刻防止误解：<strong>外在的水洗本身并不能洗去罪</strong>，唯有耶稣基督的宝血和圣灵才能洁净我们脱离一切的罪。（此处只概述其要点。）</p></div></div>
+</section>
+
+<!-- BACKGROUND -->
+<section class="card reveal" id="background" aria-labelledby="bg-h">
+  <p class="kicker">真实背景 · 作者 · 受众 · 年代 · 处境</p>
+  <h2 id="bg-h"><svg class="ic" aria-hidden="true"><use href="#i-map"/></svg>两段真实历史：克里特岛与海德堡</h2>
+  <p class="lede">今天的讲台上同时站着两份文件：一封一世纪的使徒书信，一本十六世纪的教会教理。前者是神所默示的圣经，后者是教会对圣经忠实的总结。我们先听圣经，再看要理问答如何把它化为会众的口中之言。</p>
+
+  <h3 id="bg-titus"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>（一）提多书：使徒保罗写给在克里特的提多</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>内容</th></tr></thead>
+      <tbody>
+        <tr><td>作者</td><td>书信自称“神的仆人、耶稣基督的使徒保罗”（多1:1）。教会历来接受保罗为作者。近代部分学者认为“教牧书信”（提前、提后、提多书）出自保罗之后的门徒之手；改革宗传统接受书信的自我见证，视之为保罗所写。</td></tr>
+        <tr><td>受者</td><td>提多：外邦人出身的同工（加2:3 未受割礼），保罗称他为“照着我们共信之道作我真儿子的”（多1:4）。</td></tr>
+        <tr><td>年代</td><td>传统看法：保罗第一次罗马监禁获释后再次宣教期间，约主后63–65年。书信末尾提到他打算在尼哥波立过冬（3:12）。</td></tr>
+        <tr><td>地点</td><td>克里特岛：爱琴海南部的大岛。保罗留下提多“将那没有办完的事都办整齐，又照我所吩咐的，在各城设立长老”（1:5）。</td></tr>
+        <tr><td>处境</td><td>①教会初建，需要立长老（1:5–9）；②“不服约束、说虚空话、欺哄人的，那奉割礼的更是这样”（1:10），为利益搅乱全家（1:11）；③他们本地的一个先知说“克里特人常说谎话，乃是恶兽，又馋又懒”（1:12），保罗说“这个见证是真的”（1:13）；④家庭秩序：老年人、少年人、仆人各当如何（2:1–10），“免得神的道理被毁谤”（2:5）。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="key focus"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><div><p class="lab">为什么写 2:11–3:8？</p><p>保罗在2:1–10 给了一大串伦理要求，然后用一个“<strong>因为</strong>”（2:11）说明根据：不是靠文化改良，也不是靠割礼和犹太人的规条（1:14），而是<mark class="m-gold">神救众人的恩典已经显明出来</mark>。伦理建基于恩典，行为生发于洗净。</p></div></div>
+
+  <h3 id="bg-hc"><svg class="ic" aria-hidden="true"><use href="#i-seal"/></svg>（二）海德堡要理问答：1563年，普法尔茨选侯国</h3>
+  <div class="timeline">
+    <div class="ev g"><p><strong>背景</strong>：宗教改革之后，普法尔茨（Pfalz）境内路德宗与改革宗之间在圣礼——特别是圣餐——问题上争论激烈，罗马天主教的圣礼观与重洗派对婴孩洗礼的否定也同时存在。</p></div>
+    <div class="ev s"><p><strong>委托</strong>：选侯腓特烈三世（Frederick III）委托编写一份统一的教理，用于教导青年，也用于教会讲道。</p></div>
+    <div class="ev"><p><strong>编者</strong>：传统上归于海德堡大学的撒迦利亚·乌尔西努（Ursinus）与宫廷传道人卡斯帕·俄利维亚努（Olevianus），实际上是一个委员会的成果。</p></div>
+    <div class="ev b"><p><strong>1563年</strong>：在海德堡出版，后分为52个主日，供教会在主日（常在下午礼拜）按次讲解——今天我们正是在这个传统中讲第26主日。</p></div>
+    <div class="ev g"><p><strong>此后</strong>：与比利时信条（1561）、多特信经（1618–19）合称“三项合一信条”，为欧陆改革宗教会所共守；比利时信条第34条专论洗礼。</p></div>
+  </div>
+  <div class="key hard"><svg class="ic" aria-hidden="true"><use href="#i-brain"/></svg><div><p class="lab">为什么问69–71写得这样谨慎？</p><p>它要在三条路之间走窄路：<strong>不说水自动成就恩典</strong>（防止“事效论”ex opere operato）；<strong>不说洗礼只是人的表态或纪念</strong>（防止“纯象征论”）；而是说：基督<strong>设立</strong>记号、<strong>应许</strong>实体，圣灵借着<strong>信心</strong>使人领受。</p></div></div>
+
+  <h3 id="bg-map"><svg class="ic" aria-hidden="true"><use href="#i-map"/></svg>示意地图（非精确比例）</h3>
+  <div class="grid-2">
+    <figure class="fig">
+      <svg viewBox="0 0 420 300" role="img" aria-labelledby="mapA">
+        <title id="mapA">示意图：爱琴海、希腊、小亚细亚与克里特岛</title>
+        <rect width="420" height="300" fill="#dcebf5"/>
+        <path d="M0 0h150l-10 40 20 30-30 20 10 40-40 10-20-30-30 20-20-10V0Z" fill="#efe3c6" stroke="#b9a676"/>
+        <path d="M290 0h130v210l-40-10-30 20-40-30-10-40 20-30-30-40 10-40Z" fill="#efe3c6" stroke="#b9a676"/>
+        <path d="M95 225c30-12 80-14 120-8 30 4 60 2 90-6 10 6 6 14-6 18-40 12-90 16-140 14-30-1-60 0-70-6Z" fill="#e6c57a" stroke="#a6843d" stroke-width="1.5"/>
+        <g fill="#0e1a2b" font-size="13">
+          <text x="18" y="60">马其顿 / 希腊</text>
+          <text x="318" y="90">小亚细亚</text>
+          <text x="160" y="120" fill="#1f6fa8" font-size="15">爱 琴 海</text>
+          <text x="165" y="262" fill="#6d5420" font-weight="700">克里特岛 Crete</text>
+          <text x="140" y="290" fill="#1f6fa8">地 中 海</text>
+        </g>
+        <circle cx="40" cy="35" r="4" fill="#9b1f33"/><text x="48" y="30" font-size="11" fill="#9b1f33">尼哥波立方向(多3:12，在西北)</text>
+        <circle cx="330" cy="150" r="4" fill="#1d6b44"/><text x="280" y="170" font-size="11" fill="#1d6b44">以弗所</text>
+        <path class="pulse" d="M195 225l0-8" stroke="#9b1f33" stroke-width="3"/>
+        <text x="300" y="285" font-size="10" fill="#555">示意图 schematic</text>
+      </svg>
+      <figcaption>提多所在的克里特岛位于爱琴海南端；尼哥波立一般认为在希腊西北的伊庇鲁斯（示意方向）。</figcaption>
+    </figure>
+    <figure class="fig">
+      <svg viewBox="0 0 420 300" role="img" aria-labelledby="mapB">
+        <title id="mapB">示意图：神圣罗马帝国西南部，莱茵河与内卡河交汇附近的海德堡</title>
+        <rect width="420" height="300" fill="#f3ecdf"/>
+        <path d="M60 0c20 60 40 100 30 150s20 100 40 150" stroke="#1f6fa8" stroke-width="6" fill="none"/>
+        <path d="M95 140c40 0 80-20 130-10s80 30 120 20" stroke="#5aa0d4" stroke-width="4" fill="none"/>
+        <path d="M150 60h170v170H150Z" fill="rgba(166,132,61,.12)" stroke="#a6843d" stroke-dasharray="6 5"/>
+        <circle cx="160" cy="135" r="7" fill="#9b1f33"/>
+        <g font-size="13" fill="#0e1a2b">
+          <text x="174" y="128" font-weight="700" fill="#9b1f33">海德堡 Heidelberg</text>
+          <text x="20" y="40" fill="#1f6fa8">莱茵河</text>
+          <text x="260" y="160" fill="#1f6fa8">内卡河</text>
+          <text x="210" y="85" fill="#6d5420">普法尔茨选侯国(示意)</text>
+          <text x="210" y="220" font-size="11">选侯腓特烈三世 · 1563</text>
+          <text x="210" y="240" font-size="11">乌尔西努 · 俄利维亚努</text>
+        </g>
+        <text x="320" y="290" font-size="10" fill="#555">示意图 schematic</text>
+      </svg>
+      <figcaption>海德堡位于内卡河畔、靠近莱茵河，是普法尔茨选侯的都城与大学城（示意，非精确边界）。</figcaption>
+    </figure>
+  </div>
+
+  <h3 id="bg-context"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>上下文：前后如何连结</h3>
+  <div class="grid-2">
+    <div class="mini">
+      <h4>提多书的结构</h4>
+      <ul>
+        <li><strong>1:1–4</strong> 问安：“永生的盼望”。</li>
+        <li><strong>1:5–16</strong> 设立长老，抵挡假师傅（奉割礼的）。</li>
+        <li><strong>2:1–10</strong> 各类人的生活秩序。</li>
+        <li><strong>2:11–14</strong> 根据①：恩典显明——教训我们除去不敬虔……等候荣耀显现；基督“洁净我们，特作自己的子民，热心为善”（2:14）。</li>
+        <li><strong>3:1–2</strong> 对外：顺服、温柔。</li>
+        <li><strong>3:3–7</strong> 根据②：我们从前……；但神的恩慈和慈爱显明，“便救了我们……乃是照他的怜悯，借着重生的洗和圣灵的更新”（3:5）。</li>
+        <li><strong>3:8</strong> “这话是可信的……使那些已信神的人留心作正经事业（热心行善）”。</li>
+        <li><strong>3:9–15</strong> 结语、行程与问安。</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4>主日26在要理问答中的位置</h4>
+      <ul>
+        <li>问1–2：唯一的安慰；必须知道三件事——<span class="chip crimson">罪与苦难</span> <span class="chip green">得救赎</span> <span class="chip gold">感恩</span></li>
+        <li>第二部分（得救赎）里：信经讲解之后，转入<strong>圣礼</strong>——圣灵借传福音在心中生发信心，又借圣礼坚固它。</li>
+        <li>主日25：圣礼总论。</li>
+        <li><strong>主日26：洗礼的意义（问69–71）</strong>。</li>
+        <li>主日27：水洗本身不能除罪（问72）；婴孩洗礼。</li>
+        <li>主日28起：圣餐。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ESSENCE -->
+<section class="card reveal" id="essence" aria-labelledby="ess-h">
+  <p class="kicker">本质核心</p>
+  <h2 id="ess-h"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>一句话：水是记号，血与灵是实体，应许是纽带</h2>
+  <figure class="fig flow-anim svg-scroll">
+    <svg viewBox="0 0 900 200" role="img" aria-labelledby="flow1">
+      <title id="flow1">流程图：记号 → 应许 → 实体 → 果子，信心领受，圣灵作工</title>
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#a6843d"/></marker></defs>
+      <g font-size="15" text-anchor="middle">
+        <rect x="10" y="40" width="180" height="90" rx="18" fill="#e2f0fa" stroke="#1f6fa8" stroke-width="2"/>
+        <text x="100" y="78" fill="#1f6fa8" font-weight="700">记号 · 水</text><text x="100" y="104" font-size="12" fill="#0e1a2b">基督设立（太28:19）</text>
+        <rect x="240" y="40" width="180" height="90" rx="18" fill="#f8efd6" stroke="#a6843d" stroke-width="2"/>
+        <text x="330" y="78" fill="#6d5420" font-weight="700">应许 · 纽带</text><text x="330" y="104" font-size="12" fill="#0e1a2b">“正如”水洗身体</text>
+        <rect x="470" y="40" width="180" height="90" rx="18" fill="#f8e3e6" stroke="#9b1f33" stroke-width="2"/>
+        <text x="560" y="72" fill="#9b1f33" font-weight="700">实体 · 血与灵</text><text x="560" y="96" font-size="12" fill="#0e1a2b">血：赦罪</text><text x="560" y="115" font-size="12" fill="#0e1a2b">灵：更新</text>
+        <rect x="700" y="40" width="190" height="90" rx="18" fill="#e3f3ea" stroke="#1d6b44" stroke-width="2"/>
+        <text x="795" y="78" fill="#1d6b44" font-weight="700">果子 · 感恩</text><text x="795" y="104" font-size="12" fill="#0e1a2b">向罪死、敬虔度日</text>
+        <path class="dash" d="M192 85H236" stroke="#a6843d" stroke-width="3" marker-end="url(#ar)"/>
+        <path class="dash" d="M422 85H466" stroke="#a6843d" stroke-width="3" marker-end="url(#ar)"/>
+        <path class="dash" d="M652 85H696" stroke="#a6843d" stroke-width="3" marker-end="url(#ar)"/>
+        <text x="450" y="170" font-size="13" fill="#5b3f8c">由<tspan font-weight="700">信心</tspan>领受 · 由<tspan font-weight="700">圣灵</tspan>施行 · 不是水本身的力量</text>
+      </g>
+    </svg>
+    <figcaption>窄屏时可左右滑动此图。</figcaption>
+  </figure>
+  <div class="grid-3">
+    <div class="mini blood"><h4><svg class="ic-sm" aria-hidden="true"><use href="#i-warn"/></svg> 错误一：水有魔力</h4><p>以为施行了仪式就自动成就重生（事效论）。问72：外在水洗本身不能除罪。</p></div>
+    <div class="mini water"><h4><svg class="ic-sm" aria-hidden="true"><use href="#i-warn"/></svg> 错误二：只是纪念</h4><p>以为洗礼只是我向神表态。问69 却说：是<strong>基督</strong>设立并<strong>应许</strong>，是神向我“表明并印证”。</p></div>
+    <div class="mini spirit"><h4><svg class="ic-sm" aria-hidden="true"><use href="#i-star"/></svg> 改革宗：圣礼性的联合</h4><p>记号与实体不混同，也不分离；借应许相连，由信心领受，圣灵作工。</p></div>
+  </div>
+  <div class="key focus"><svg class="ic" aria-hidden="true"><use href="#i-seal"/></svg><div><p class="lab">“表明并印证”：两个动词</p><p><strong>表明</strong>——像一幅图画，让眼睛看见福音；<strong>印证</strong>——像盖在文件上的印，使应许对<em>我</em>确定。罗4:11 称割礼为亚伯拉罕“因信称义的印证”，同样的语言用于新约圣礼。</p></div></div>
+</section>
+<!-- WHOLE BIBLE -->
+<section class="card reveal" id="wholebible" aria-labelledby="wb-h">
+  <p class="kicker">跳出框架 · 看整本圣经</p>
+  <h2 id="wb-h"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg>从创造之水到羔羊的血：洁净的长河</h2>
+  <p>洗礼不是新约突然出现的仪式。从创世记到启示录，神一直用“水”说审判与拯救，用“血”说赎罪，用“灵”说新造。主日26把这三条线在基督身上收拢。</p>
+  <div class="timeline">
+    <div class="ev"><p><strong>创造</strong>（创1:2）：神的灵运行在水面上——灵与水在新创造之先已同在。</p></div>
+    <div class="ev"><p><strong>洪水</strong>（创6–9；彼前3:20–21）：水是审判，方舟里的八口人却“借着水得救”；彼得说这水所预表的洗礼，“不在乎除掉肉体的污秽，只求在神面前有无亏的良心”。</p></div>
+    <div class="ev"><p><strong>红海</strong>（出14；林前10:1–2）：以色列人“在云里、海里受洗归了摩西”——穿过审判之水，脱离为奴之家。</p></div>
+    <div class="ev g"><p><strong>割礼</strong>（创17；罗4:11）：圣约的记号与印证，赐给信者及其后裔。</p></div>
+    <div class="ev b"><p><strong>利未记的洗濯与血</strong>（利14；利16；民19；来9:13–14、22）：祭司、长大麻风得洁净的人都要洗；而“若不流血，罪就不得赦免”。水与血一同出现在洁净礼中。</p></div>
+    <div class="ev s"><p><strong>先知的应许</strong>（结36:25–27；亚13:1）：“我必用清水洒在你们身上，你们就洁净了……我也要赐给你们一个新心……将我的灵放在你们里面”；“那日，必为大卫家和耶路撒冷的居民开一个泉源，洗除罪恶与污秽”。</p></div>
+    <div class="ev"><p><strong>约翰的洗</strong>（太3:11；约1:33）：“我是用水给你们施洗……他要用圣灵与火给你们施洗”——约翰的水指向一位更大者。</p></div>
+    <div class="ev s"><p><strong>基督受洗</strong>（太3:13–17）：无罪的那一位站在罪人的行列里受洗，圣灵降在祂身上，父说“这是我的爱子”。</p></div>
+    <div class="ev b"><p><strong>十字架</strong>（约19:34；约一5:6）：兵丁扎祂的肋旁，“随即有血和水流出来”。</p></div>
+    <div class="ev g"><p><strong>大使命</strong>（太28:19）：复活的主设立洗礼——奉父、子、圣灵的名。</p></div>
+    <div class="ev s"><p><strong>五旬节</strong>（徒2:38–39）：“你们各人要悔改，奉耶稣基督的名受洗，叫你们的罪得赦，就必领受所赐的圣灵；因为这应许是给你们和你们的儿女……”</p></div>
+    <div class="ev"><p><strong>使徒的解释</strong>（罗6:3–4；西2:11–12；多3:5）：受洗归入基督的死，与祂一同埋葬、一同复活；重生的洗与圣灵的更新。</p></div>
+    <div class="ev b"><p><strong>终局</strong>（启1:5；7:14）：“他用自己的血使我们脱离罪”；“他们曾用羔羊的血把衣裳洗白净了”。</p></div>
+  </div>
+  <div class="key grace"><svg class="ic" aria-hidden="true"><use href="#i-loop"/></svg><div><p class="lab">闭环</p><p>创造时<strong>灵在水上</strong>；新天新地里<strong>衣裳在血中洗白</strong>。洗礼站在中间，把我们的名字写进这条从起初到末了的救恩历史。</p></div></div>
+</section>
+
+<!-- ZOOM -->
+<section class="card reveal" id="zoom" aria-labelledby="zoom-h">
+  <p class="kicker">先整体 · 后局部</p>
+  <h2 id="zoom-h"><svg class="ic" aria-hidden="true"><use href="#i-brain"/></svg>逐字细读：问69–71 与 提多书3:4–7</h2>
+  <div class="scripture">
+    <p>“但到了神我们救主的恩慈和他向人所施的慈爱显明的时候，他便救了我们；并不是因我们自己所行的义，乃是照他的怜悯，借着重生的洗和圣灵的更新。圣灵就是神借着耶稣基督我们救主厚厚浇灌在我们身上的，好叫我们因他的恩得称为义，可以凭着盼望成为后嗣，得以永生。”</p>
+    <p class="ref">提多书 3:4–7（和合本）</p>
+  </div>
+  <div class="phrase"><div class="w m-water">外在的水洗</div><p><strong>“外在”</strong>二字先划清界线：水触到的是身体。它是真实的、看得见的，但它本身不是恩典。正因为它是外在的，它才能作“图画”——看得见的指向看不见的。</p></div>
+  <div class="phrase"><div class="w m-gold">应许</div><p>洗礼的力量在于<strong>说话的那一位</strong>。基督“以此应许”——不是牧师应许，不是父母应许，是主自己应许。圣礼是“看得见的道”，离开道，水就只是水。</p></div>
+  <div class="phrase"><div class="w m-gold">正如</div><p>这是整段的铰链。“正如水洗去人身体的污秽一样”——每一次洗手、洗澡，都在提醒：基督的血与灵洗净我的灵魂，<strong>同样真实，同样确定</strong>，而且更深。</p></div>
+  <div class="phrase"><div class="w m-blood">一次的献祭</div><p>问69 说“基督在十字架上<strong>一次</strong>的献祭”（参来10:10–14）。洗礼不重复献祭，而是把那一次献祭的益处印在我身上。</p></div>
+  <div class="phrase"><div class="w m-blood">宝血</div><p>血代表生命被倾倒（利17:11）。罪的工价乃是死，所以赦免需要一条命替代。基督的血是“所洒的血，说出来的比亚伯的血所说的更美”（来12:24）。</p></div>
+  <div class="phrase"><div class="w m-blood">白白赦罪</div><p>“藉着恩典……白白”：不是“因我们自己所行的义”（多3:5），不是因为洗礼这个行为，而是因为祂的血。洗礼不是付款，是收据。</p></div>
+  <div class="phrase"><div class="w m-spirit">圣灵更新</div><p>多3:5 的“更新”与罗12:2“心意更新而变化”同一字根。赦罪改变我在神面前的<strong>地位</strong>；更新改变我里面的<strong>本性</strong>。</p></div>
+  <div class="phrase"><div class="w m-spirit">基督的肢体</div><p>受洗不是个人的私事。圣灵把我们嫁接进基督的身体（林前12:13），所以洗礼在会众中施行，教会一同领受、一同承担。</p></div>
+  <div class="phrase"><div class="w m-spirit">越来越向罪死</div><p>“越来越”——成圣是过程，不是瞬间完成。罗6:4：“我们藉着洗礼归入死，和他一同埋葬……叫我们一举一动有新生的样式”。旧人每天被治死，新人每天被兴起。</p></div>
+  <div class="phrase"><div class="w m-gold">重生的洗</div><p>多3:5。改革宗理解：洗礼是重生的<strong>记号与印证</strong>，“重生的洗”是用记号的名称来称呼它所指的实体（圣礼性的说法），而非说水本身使人重生。紧接着的“圣灵的更新”说明真正的施行者是谁。</p></div>
+  <div class="phrase"><div class="w m-gold">除罪的洗</div><p>徒22:16，亚拿尼亚对扫罗说：“起来，求告他的名受洗，洗去你的罪。”注意“<strong>求告他的名</strong>”——是向主的呼求与信靠，与水洗连在一起。</p></div>
+</section>
+
+<!-- HEAD 1 -->
+<section class="card reveal" id="head1" aria-labelledby="h1-h" style="border-top:6px solid var(--crimson)">
+  <p class="kicker" style="color:var(--crimson)">第一点</p>
+  <h2 id="h1-h"><svg class="ic" aria-hidden="true"><use href="#i-blood"/></svg>罪人借着洗礼得洁净——借着基督的血</h2>
+  <h3>1. 先承认：我们灵魂里有“一切的污秽”</h3>
+  <p>问69 没有说“一些污点”，而说“我灵魂中<strong>一切的污秽</strong>，即所有的罪”。提多书3:3 把镜子举到我们面前：“我们从前也是无知、悖逆、受迷惑、服事各样私欲和宴乐，常存恶毒、嫉妒的心，是可恨的，又是彼此相恨。”保罗没有说“你们克里特人从前”，他说“<strong>我们</strong>”。使徒与说谎的克里特人站在同一条队伍里。诗篇24篇问“谁能登耶和华的山？”——没有一个人的手是洁净的。</p>
+  <h3>2. 血的洗：白白的赦罪</h3>
+  <p>问70：“受基督宝血的洗是指藉着恩典，因基督在十字架上牺牲而为我们流的宝血，我们白白得蒙神的赦罪。”这就是<mark class="m-blood">称义</mark>。提多书3:7 说“好叫我们因他的恩得称为义”。神在审判台前宣告：这人的罪已被洗去，不再算在他账上。</p>
+  <div class="grid-3">
+    <div class="mini blood"><h4>结36:25 · 应许</h4><p>“我必用清水洒在你们身上，你们就洁净了；我要洁净你们，使你们脱离一切的污秽。”</p></div>
+    <div class="mini blood"><h4>亚13:1 · 泉源</h4><p>“必为大卫家和耶路撒冷的居民开一个泉源，洗除罪恶与污秽。”</p></div>
+    <div class="mini blood"><h4>弗1:7 · 救赎</h4><p>“我们借这爱子的血得蒙救赎，过犯得以赦免，乃是照他丰富的恩典。”</p></div>
+    <div class="mini blood"><h4>来12:24 · 所洒的血</h4><p>耶稣的血“所说的比亚伯的血所说的更美”——亚伯的血呼求报应，基督的血宣告赦免。</p></div>
+    <div class="mini blood"><h4>彼前1:2 · 洒血</h4><p>“被耶稣基督的血所洒”——旧约立约时洒血（出24:8）的成全。</p></div>
+    <div class="mini blood"><h4>启1:5；7:14 · 洗白</h4><p>“用自己的血使我们脱离罪”；“用羔羊的血把衣裳洗白净了”。</p></div>
+  </div>
+  <h3>3. 洗礼怎样“印证”血的洗？</h3>
+  <p>想想一个人得了赦免令。赦免靠的是君王的旨意，不是那张纸；但那张纸、那个印，使他在夜里良心控告时可以拿出来说：“我已被赦免。”洗礼就是这样的印。当撒但说“你这样的人还算基督徒吗？”你不要先看自己的表现，要回头看那水上所宣告的应许：<strong>主已用祂的血洗净我</strong>。你在洗礼中所领受的，是那“不能说谎的神”（多1:2）的应许。</p>
+  <div class="key warn"><svg class="ic" aria-hidden="true"><use href="#i-warn"/></svg><div><p class="lab">难点 · 血的洗不靠水</p><p>罪得赦免是因为基督的血，不是因为水。问72 明说外在水洗本身不能洗去罪。所以没有机会受洗却真信主的人（如十字架上的强盗，路23:43）并不因此失落；但藐视主的设立、拒绝洗礼，却是不顺服。</p></div></div>
+  <h3>4. 应用：每天回到血泉</h3>
+  <ul>
+    <li><strong>对受控告的良心</strong>：你的罪是真的，但血更真。“正如水洗去身体的污秽一样”确定。</li>
+    <li><strong>对骄傲的心</strong>：“白白”二字把一切夸口排除（多3:5“并不是因我们自己所行的义”）。</li>
+    <li><strong>对彼此</strong>：被白白赦免的人，也要“不毁谤，不争竞，总要和平”（多3:2）。</li>
+  </ul>
+</section>
+
+<!-- HEAD 2 -->
+<section class="card reveal" id="head2" aria-labelledby="h2-h" style="border-top:6px solid var(--green)">
+  <p class="kicker" style="color:var(--green)">第二点</p>
+  <h2 id="h2-h"><svg class="ic" aria-hidden="true"><use href="#i-flame"/></svg>罪人借着洗礼得洁净——借着基督的灵</h2>
+  <h3>1. 只有赦罪还不够吗？</h3>
+  <p>罪不只是账本上的债，也是心里的病。只把罪债勾销而不医治那颗心，人仍旧“服事各样私欲”（多3:3）。所以神的应许是双重的：结36:25 洒清水洁净，紧接着36:26–27“我也要赐给你们一个新心……我必将我的灵放在你们里面，使你们顺从我的律例”。</p>
+  <h3>2. 灵的洗：更新、成圣、作肢体</h3>
+  <p>问70：“受他圣灵的洗是指我们被圣灵更新，成为圣洁，作基督的肢体，叫我们越来越向罪死，且敬虔度日，无有瑕疵。”这就是<mark class="m-spirit">成圣</mark>。提多书3:5–6：“圣灵的更新。圣灵就是神借着耶稣基督我们救主<strong>厚厚浇灌</strong>在我们身上的。”不是一滴一滴地省着给，而是丰丰富富地倾倒——五旬节的语言（徒2:17、33）。</p>
+  <div class="grid-2">
+    <div class="mini spirit"><h4>约3:5–8 · 从水和圣灵生</h4><p>“人若不是从水和圣灵生的，就不能进神的国……风随着意思吹”——重生是圣灵主权的工作。</p></div>
+    <div class="mini spirit"><h4>罗6:4 · 新生的样式</h4><p>“我们藉着洗礼归入死，和他一同埋葬……叫我们一举一动有新生的样式。”</p></div>
+    <div class="mini spirit"><h4>林前6:11 · 洗净、成圣、称义</h4><p>“你们中间也有人从前是这样；但如今你们奉主耶稣基督的名，并藉着我们神的灵，已经洗净、成圣、称义了。”</p></div>
+    <div class="mini spirit"><h4>西2:11–12 · 基督的割礼</h4><p>“你们在他里面也受了不是人手所行的割礼，乃是基督使你们脱去肉体情欲的割礼。你们既受洗与他一同埋葬，也在此与他一同复活。”</p></div>
+  </div>
+  <h3>3. 提多书2:11–12：恩典是一位老师</h3>
+  <div class="scripture"><p>“因为神救众人的恩典已经显明出来，<strong>教训我们</strong>除去不敬虔的心和世俗的情欲，在今世自守、公义、敬虔度日，等候所盼望的福，并等候至大的神和我们救主耶稣基督的荣耀显现。”</p><p class="ref">提多书 2:11–13</p></div>
+  <p>“教训”这个字原有“管教、训练孩童”的意思。恩典不只是把我们从罪里捞出来，还每天领我们上课：<mark class="m-spirit">“除去”</mark>（向罪死）、<mark class="m-spirit">“敬虔度日”</mark>（向神活）。这与问70 的用语几乎一一对应。</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>问70（灵的洗）</th><th>提多书</th></tr></thead>
+    <tbody>
+      <tr><td>被圣灵更新</td><td>3:5 圣灵的更新；3:6 厚厚浇灌</td></tr>
+      <tr><td>成为圣洁</td><td>2:14 洁净我们，特作自己的子民</td></tr>
+      <tr><td>作基督的肢体</td><td>2:14 “自己的子民”；3:7 成为后嗣</td></tr>
+      <tr><td>越来越向罪死</td><td>2:12 除去不敬虔的心和世俗的情欲</td></tr>
+      <tr><td>敬虔度日，无有瑕疵</td><td>2:12 自守、公义、敬虔度日；3:8 热心行善</td></tr>
+    </tbody>
+  </table></div>
+  <h3>4. 应用：受洗的人怎样活</h3>
+  <ul>
+    <li><strong>在家庭里</strong>（2:1–10）：老年人、少年人、在职场受雇的人——让神的道“处处尊荣”（2:10）。</li>
+    <li><strong>在社会里</strong>（3:1–2）：顺服掌权的、预备行各样善事、向众人大显温柔。</li>
+    <li><strong>在争战里</strong>：当旧习气又回来，记得你已“受洗归入他的死”。不是“我做不到”，而是“我已不再属于它”。</li>
+  </ul>
+</section>
+
+<!-- ONE CHRIST -->
+<section class="card reveal" id="onechrist" aria-labelledby="oc-h">
+  <p class="kicker">思维导图 · 两点合一</p>
+  <h2 id="oc-h"><svg class="ic" aria-hidden="true"><use href="#i-cross"/></svg>血与灵：一位基督，不可分开</h2>
+  <figure class="fig svg-scroll">
+    <svg viewBox="0 0 900 420" role="img" aria-labelledby="mm">
+      <title id="mm">思维导图：中心为“一位基督，一个洗礼”，左支为基督的血（称义），右支为基督的灵（成圣）</title>
+      <g stroke-width="2.5" fill="none">
+        <path d="M450 210C380 210 330 110 250 90" stroke="#9b1f33"/><path d="M450 210C380 210 330 210 250 210" stroke="#9b1f33"/><path d="M450 210C380 210 330 310 250 330" stroke="#9b1f33"/>
+        <path d="M450 210C520 210 570 110 650 90" stroke="#1d6b44"/><path d="M450 210C520 210 570 210 650 210" stroke="#1d6b44"/><path d="M450 210C520 210 570 310 650 330" stroke="#1d6b44"/>
+        <path d="M450 210V380" stroke="#1f6fa8" stroke-dasharray="5 5"/>
+      </g>
+      <g font-size="14" text-anchor="middle">
+        <circle cx="450" cy="210" r="78" fill="#0e1a2b"/>
+        <text x="450" y="200" fill="#e6c57a" font-weight="700" font-size="16">一位基督</text>
+        <text x="450" y="224" fill="#f7f1e4">一个洗礼</text>
+        <rect x="40" y="60" width="210" height="60" rx="14" fill="#f8e3e6" stroke="#9b1f33"/><text x="145" y="86" fill="#9b1f33" font-weight="700">血 · 称义</text><text x="145" y="106" font-size="12">地位改变：无罪</text>
+        <rect x="40" y="180" width="210" height="60" rx="14" fill="#f8e3e6" stroke="#9b1f33"/><text x="145" y="206" fill="#9b1f33" font-weight="700">白白赦罪</text><text x="145" y="226" font-size="12">弗1:7 · 多3:7</text>
+        <rect x="40" y="300" width="210" height="60" rx="14" fill="#f8e3e6" stroke="#9b1f33"/><text x="145" y="326" fill="#9b1f33" font-weight="700">良心平安</text><text x="145" y="346" font-size="12">来10:22 · 彼前3:21</text>
+        <rect x="650" y="60" width="210" height="60" rx="14" fill="#e3f3ea" stroke="#1d6b44"/><text x="755" y="86" fill="#1d6b44" font-weight="700">灵 · 成圣</text><text x="755" y="106" font-size="12">本性更新：新心</text>
+        <rect x="650" y="180" width="210" height="60" rx="14" fill="#e3f3ea" stroke="#1d6b44"/><text x="755" y="206" fill="#1d6b44" font-weight="700">作基督的肢体</text><text x="755" y="226" font-size="12">林前12:13 · 多2:14</text>
+        <rect x="650" y="300" width="210" height="60" rx="14" fill="#e3f3ea" stroke="#1d6b44"/><text x="755" y="326" fill="#1d6b44" font-weight="700">向罪死 · 敬虔度日</text><text x="755" y="346" font-size="12">罗6:4 · 多2:12</text>
+        <rect x="340" y="360" width="220" height="50" rx="14" fill="#e2f0fa" stroke="#1f6fa8"/><text x="450" y="390" fill="#1f6fa8" font-weight="700">水：表明并印证两者</text>
+      </g>
+    </svg>
+    <figcaption>左红：基督的血（称义）；右绿：基督的灵（成圣）；底蓝：水是记号。窄屏可左右滑动。</figcaption>
+  </figure>
+  <div class="key hard"><svg class="ic" aria-hidden="true"><use href="#i-brain"/></svg><div><p class="lab">难点 · 区分而不分开</p><p><strong>称义</strong>与<strong>成圣</strong>要区分：称义是一次完成的宣告，成圣是终身的过程；我们不靠成圣得称义。但二者<strong>不可分开</strong>：同一位基督既是我们的义，又是我们的圣洁（林前1:30）。只要血不要灵，是廉价的恩典；只要灵不要血，是靠行为的律法主义。提多书3:5–7 把“重生的洗和圣灵的更新”与“因他的恩得称为义”放在同一句话里。</p></div></div>
+</section>
+<!-- LOOPS -->
+<section class="card reveal" id="loops" aria-labelledby="loops-h">
+  <p class="kicker">四重闭环 · 一个整体</p>
+  <h2 id="loops-h"><svg class="ic" aria-hidden="true"><use href="#i-loop"/></svg>四重闭环：同一个洗礼，四个角度</h2>
+
+  <div id="loop-history" class="mini water" style="margin-bottom:.9rem">
+    <span class="loop-tag">① 救赎历史闭环</span>
+    <h3 style="margin-top:.2rem">从“灵在水上”到“衣裳洗白”</h3>
+    <p><strong>起点</strong>：创造（灵运行水面）→ <strong>堕落</strong>：人被污秽，被逐出伊甸 → <strong>预表</strong>：洪水、红海、洁净礼、割礼 → <strong>应许</strong>：结36、亚13 → <strong>成全</strong>：基督受洗、十字架流出血和水、复活后设立洗礼 → <strong>浇灌</strong>：五旬节“厚厚浇灌”（多3:6）→ <strong>今日</strong>：教会施洗、信徒天天回到洗礼 → <strong>终点</strong>：启7:14 衣裳在羔羊血中洗白，站在宝座前。提多书2:13 的“等候……荣耀显现”就是这闭环的终点：<em>第一次显现</em>（2:11 恩典显明）开启，<em>第二次显现</em>（2:13 荣耀显现）完成。</p>
+  </div>
+
+  <div id="loop-covenant" class="mini gold" style="margin-bottom:.9rem">
+    <span class="loop-tag">② 圣约神学闭环</span>
+    <h3 style="margin-top:.2rem">洗礼：恩典之约的记号与印证</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>旧约：割礼</th><th>新约：洗礼</th><th>连续性 / 不同</th></tr></thead>
+      <tbody>
+        <tr><td>“我要与你并你世世代代的后裔坚定我的约”（创17:7）</td><td>“这应许是给你们和你们的儿女”（徒2:39）</td><td>同一个恩典之约，同样包括信者的儿女</td></tr>
+        <tr><td>“因信称义的印证”（罗4:11）</td><td>表明并印证基督献祭的益处（问69）</td><td>都是神那一方的印证，不是人的功德</td></tr>
+        <tr><td>要“将心里的污秽除掉”（申10:16；30:6）</td><td>“基督的割礼……受洗与他一同埋葬”（西2:11–12）</td><td>保罗把割礼与洗礼并列，都指向内心的洁净</td></tr>
+        <tr><td>流血的记号，限于男子</td><td>不流血的水，男女同受（加3:27–28）</td><td>基督的血已流尽，新约记号更宽广</td></tr>
+      </tbody>
+    </table></div>
+    <p><svg class="ic-sm" aria-hidden="true"><use href="#i-child"/></svg> <strong>约中的儿女</strong>：改革宗教会给信徒的婴孩施洗（主日27接着讲；比利时信条第34条也论及洗礼），根据是恩典之约的连续与神的应许，而不是说婴孩因此自动得救。洗礼印证的是神的应许；儿女长大后要用信心与悔改来拥抱这应许。圣约有<strong>应许</strong>，也有<strong>要求</strong>：信而受洗的必然得救，不信的必被定罪（可16:16）。</p>
+    <p class="fine">谨慎：本节只陈述改革宗的圣约论证与经文依据，不宣称洗礼本身保证个别婴孩的重生。</p>
+  </div>
+
+  <div id="loop-bt" class="mini spirit" style="margin-bottom:.9rem">
+    <span class="loop-tag">③ 经文圣经神学闭环</span>
+    <h3 style="margin-top:.2rem">以西结36 → 提多书3 → 海德堡问70：同一个双重结构</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th></th><th>以西结 36:25–27</th><th>提多书 3:5–7</th><th>海德堡 问70</th></tr></thead>
+      <tbody>
+        <tr><td><span class="chip crimson">洁净/赦罪</span></td><td>洒清水，洁净一切污秽</td><td>重生的洗；因他的恩得称为义</td><td>宝血的洗：白白赦罪</td></tr>
+        <tr><td><span class="chip green">新心/更新</span></td><td>新心、新灵，将我的灵放在你们里面</td><td>圣灵的更新，厚厚浇灌</td><td>圣灵的洗：更新、成圣</td></tr>
+        <tr><td><span class="chip gold">结果</span></td><td>顺从我的律例；你们要作我的子民</td><td>成为后嗣；热心行善（3:8）</td><td>作肢体、向罪死、敬虔度日</td></tr>
+      </tbody>
+    </table></div>
+    <p>旧约应许 → 使徒宣告其成就 → 教会用教理把它放在会众口中。经文解释经文，回到起点：神要有一个<strong>洁净的子民</strong>（多2:14；结36:28）。</p>
+  </div>
+
+  <div id="loop-reformed" class="mini blood">
+    <span class="loop-tag">④ 改革宗 罪–恩典–感恩 闭环</span>
+    <h3 style="margin-top:.2rem">海德堡自己的三段式（问2）</h3>
+    <figure class="fig flow-anim svg-scroll" style="background:#fff">
+      <svg viewBox="0 0 900 260" role="img" aria-labelledby="loopT">
+        <title id="loopT">罪—恩典—感恩循环流程图</title>
+        <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#0e1a2b"/></marker></defs>
+        <g text-anchor="middle" font-size="14">
+          <rect x="20" y="70" width="240" height="120" rx="20" fill="#f8e3e6" stroke="#9b1f33" stroke-width="2"/>
+          <text x="140" y="105" fill="#9b1f33" font-weight="700" font-size="17">罪（苦难）</text>
+          <text x="140" y="132" font-size="13">灵魂中一切的污秽</text><text x="140" y="154" font-size="13">多3:3“我们从前也是……”</text>
+          <rect x="330" y="70" width="240" height="120" rx="20" fill="#f8efd6" stroke="#a6843d" stroke-width="2"/>
+          <text x="450" y="105" fill="#6d5420" font-weight="700" font-size="17">恩典（救赎）</text>
+          <text x="450" y="132" font-size="13">血：白白赦罪</text><text x="450" y="154" font-size="13">灵：重生更新（多3:5）</text>
+          <rect x="640" y="70" width="240" height="120" rx="20" fill="#e3f3ea" stroke="#1d6b44" stroke-width="2"/>
+          <text x="760" y="105" fill="#1d6b44" font-weight="700" font-size="17">感恩（生活）</text>
+          <text x="760" y="132" font-size="13">向罪死、敬虔度日</text><text x="760" y="154" font-size="13">多2:12；3:8 热心行善</text>
+          <path class="dash" d="M262 130H326" stroke="#0e1a2b" stroke-width="2.5" marker-end="url(#ar2)"/>
+          <path class="dash" d="M572 130H636" stroke="#0e1a2b" stroke-width="2.5" marker-end="url(#ar2)"/>
+          <path class="dash" d="M760 192C760 250 140 250 140 194" stroke="#1f6fa8" stroke-width="2.5" fill="none" marker-end="url(#ar2)"/>
+          <text x="450" y="244" fill="#1f6fa8" font-size="13">每日回到洗礼：认罪 → 再投靠血与灵 → 更新感恩</text>
+          <text x="450" y="40" fill="#0e1a2b" font-size="14">洗礼把三段印在一个人身上</text>
+        </g>
+      </svg>
+    </figure>
+    <p><strong>罪</strong>：水的必要证明我们污秽。<strong>恩典</strong>：血与灵是神白白的供应。<strong>感恩</strong>：被洗净的人不再回到泥里（彼后2:22 的反面），而是“热心行善”。感恩又使人更深认识自己的罪，于是更紧地抓住恩典——闭环不断加深，直到荣耀显现。</p>
+  </div>
+</section>
+
+<!-- PARALLELS -->
+<section class="card reveal" id="parallels" aria-labelledby="par-h">
+  <p class="kicker">类似经文 · 互相印证</p>
+  <h2 id="par-h"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>平行经文对照表</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>经文</th><th>关键句（和合本大意）</th><th>归类</th><th>与主日26的连结</th></tr></thead>
+    <tbody>
+      <tr><td>太28:19</td><td>奉父、子、圣灵的名给他们施洗</td><td><span class="chip water">设立</span></td><td>问69（1）、问71：基督亲自设立</td></tr>
+      <tr><td>可16:16</td><td>信而受洗的必然得救，不信的必被定罪</td><td><span class="chip gold">应许+要求</span></td><td>问71：定罪的原因是“不信”</td></tr>
+      <tr><td>太3:11；约1:33</td><td>他要用圣灵与火给你们施洗</td><td><span class="chip green">灵</span></td><td>水的施洗者指向灵的施洗者</td></tr>
+      <tr><td>徒2:38</td><td>受洗，叫你们的罪得赦，就必领受所赐的圣灵</td><td><span class="chip crimson">血</span>+<span class="chip green">灵</span></td><td>赦罪与圣灵同时应许</td></tr>
+      <tr><td>罗6:3–4</td><td>受洗归入他的死……有新生的样式</td><td><span class="chip green">灵</span></td><td>向罪死，向神活</td></tr>
+      <tr><td>彼前3:21</td><td>不在乎除掉肉体的污秽，只求在神面前有无亏的良心</td><td><span class="chip water">记号≠实体</span></td><td>防止“水有魔力”</td></tr>
+      <tr><td>结36:25–27</td><td>洒清水……新心……我的灵放在你们里面</td><td><span class="chip crimson">血</span>+<span class="chip green">灵</span></td><td>问70 的旧约根基</td></tr>
+      <tr><td>亚13:1</td><td>开一个泉源，洗除罪恶与污秽</td><td><span class="chip crimson">血</span></td><td>赦罪之泉</td></tr>
+      <tr><td>林前6:11</td><td>已经洗净、成圣、称义了</td><td><span class="chip crimson">血</span>+<span class="chip green">灵</span></td><td>三个动词合一</td></tr>
+      <tr><td>来10:22</td><td>心中天良的亏欠已经洒去，身体用清水洗净了</td><td><span class="chip water">记号</span>+<span class="chip crimson">实体</span></td><td>外在洗 与 内在洒 并列</td></tr>
+      <tr><td>西2:11–12</td><td>基督的割礼……受洗与他一同埋葬</td><td><span class="chip gold">圣约</span></td><td>割礼与洗礼的连续</td></tr>
+      <tr><td>多3:5；徒22:16</td><td>重生的洗；洗去你的罪</td><td><span class="chip gold">重申应许</span></td><td>问71 的结尾证据</td></tr>
+    </tbody>
+  </table></div>
+</section>
+<!-- DISCUSSION -->
+<section class="card reveal" id="discussion" aria-labelledby="dis-h">
+  <p class="kicker">小组讨论 · 点击展开答案分析</p>
+  <h2 id="dis-h"><svg class="ic" aria-hidden="true"><use href="#i-q"/></svg>讨论问题与答案分析</h2>
+  <p class="fine"><button class="icon-btn" type="button" id="openAll" style="color:var(--ink);background:var(--gold-soft)">全部展开 / 收起</button></p>
+
+  <details class="q"><summary><span class="n">Q1</span>洗礼的水能救人吗？</summary><div class="analysis">
+    <p><strong>答：</strong>不能。水本身不能洗去罪（问72 要点；彼前3:21“不在乎除掉肉体的污秽”）。救人的是基督的血与圣灵。但这不等于洗礼“没有用”：基督设立它，并借它<strong>表明并印证</strong>祂的应许（问69）。</p>
+    <p><strong>分析：</strong>要同时避开两个极端——<span class="chip crimson">事效论</span>：仪式自动生效；<span class="chip water">纯纪念论</span>：只是人的表态。改革宗：记号与实体借应许联合，由信心领受。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q2</span>提多书3:5“重生的洗”是不是说受洗就重生了？</summary><div class="analysis">
+    <p><strong>答：</strong>圣经常用记号的名称称呼它所代表的实体（如称割礼为“约”，创17:10–11）。“重生的洗”指洗礼所表明、所印证的重生；同一节立刻说出施行者——“圣灵的更新”，并且是“照他的怜悯”，“不是因我们自己所行的义”。</p>
+    <p><strong>分析：</strong>问71 也把多3:5 列为“重申应许”之处——是<em>应许</em>，不是自动机制。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q3</span>为什么改革宗教会给婴孩施洗？婴孩又不能信。</summary><div class="analysis">
+    <p><strong>答：</strong>因为恩典之约包括信徒的儿女（创17:7；徒2:39），旧约以割礼作记号，新约以洗礼代替（西2:11–12）。洗礼首先是<strong>神的应许</strong>，而不是人的表态，所以可以施于还不能表态的约中儿女（详见主日27）。</p>
+    <p><strong>分析：</strong>婴孩洗礼不保证孩子自动得救；它把孩子放在应许之下，也把责任放在父母和教会身上：教导他们认识这洗礼的意义，呼召他们以信心回应。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q4</span>受过洗却不信的人怎么样？</summary><div class="analysis">
+    <p><strong>答：</strong>可16:16：“不信的必被定罪。”记号没有信心就不带来实体的益处；反而，藐视所受的记号，罪责更重（参来10:29）。</p>
+    <p><strong>分析：</strong>这既是警告，也是呼召：你的洗礼仍在说话——回转吧，应许依旧向悔改的人敞开（徒2:38）。牧养上要避免两种错误：对受洗者说“你一定没事”，或对软弱者说“你的洗礼无效”。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q5</span>为什么要“天天记念我的洗礼”？我只受过一次。</summary><div class="analysis">
+    <p><strong>答：</strong>洗礼施行一次，正如基督献祭一次（问69）；但它所印证的应许终身有效。每当良心控告，我们回到血；每当私欲兴起，我们回到灵；每当洗手洗脸，“正如”二字提醒我们。</p>
+    <p><strong>分析：</strong>罗6:11“向罪当看自己是死的”——“当看”就是天天以洗礼的事实来思想自己。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q6</span>后来才真信主的人，需要重新受洗吗？</summary><div class="analysis">
+    <p><strong>答：</strong>改革宗不重复奉三一真神之名所施的洗礼。洗礼的有效依据是神的应许，不是施洗者或受洗者当时的状态；你需要的不是第二次水，而是用信心拥抱第一次水所宣告的应许。</p>
+    <p><strong>分析：</strong>这正是十六世纪与重洗派争论的焦点之一（比利时信条第34条论洗礼时也处理这个问题）。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q7</span>为什么要理问答坚持“血”与“灵”两者，只说一个不行吗？</summary><div class="analysis">
+    <p><strong>答：</strong>只讲血，容易成为“得赦免却照旧生活”；只讲灵，容易成为“靠自己的进步换取接纳”。结36、多3、林前6:11 都把二者放在一起。</p>
+    <p><strong>分析：</strong>称义是成圣的根基，成圣是称义的果子；二者都来自与同一位基督的联合。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q8</span>洗礼与圣餐有什么关系？</summary><div class="analysis">
+    <p><strong>答：</strong>二者都是基督设立的圣礼，都表明并印证同一位基督和同一次献祭。洗礼是<strong>进入</strong>的记号（一次），圣餐是<strong>喂养</strong>的记号（反复）。要理问答从主日28开始讨论圣餐，可接续学习。</p>
+    <p><strong>分析：</strong>出生一次，吃饭一生：洗礼说“你属于主”，圣餐说“主继续喂养你”。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q9</span>可16:16 在新约抄本中有争议，为什么还能引用？</summary><div class="analysis">
+    <p><strong>答：</strong>马可福音16:9–20 不见于部分最早的抄本，许多中文圣经会加注说明。即使不单单依靠这处经文，太28:19、徒2:38、多3:5、徒22:16 也教导同样的内容。</p>
+    <p><strong>分析：</strong>值得注意的是，这节的后半句说定罪的原因是“不信”，而不是“没有受洗”——这本身就防止把水当作救恩的条件。</p></div></details>
+
+  <details class="q"><summary><span class="n">Q10</span>提多书把洗礼的教导放在一大段伦理之后，这告诉我们什么？</summary><div class="analysis">
+    <p><strong>答：</strong>伦理（2:1–10；3:1–2）建立在恩典（2:11–14；3:4–7）上，而恩典的目的又是行善（2:14；3:8）。这正是 罪–恩典–感恩 的结构。</p>
+    <p><strong>分析：</strong>在“又馋又懒”的克里特文化中，福音没有先要求文化改良，而是先宣告洗净，然后从洗净里长出新生活。今日的教会也是如此。</p></div></details>
+</section>
+
+<!-- EXPANSION -->
+<section class="card reveal" id="expansion" aria-labelledby="exp-h">
+  <p class="kicker">相关拓展</p>
+  <h2 id="exp-h"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg>拓展学习</h2>
+  <div class="grid-4">
+    <div class="mini water"><h4>来10:22</h4><p>“心中天良的亏欠已经洒去，身体用清水洗净了”——外在水洗与内在洒血并列，正是“正如”的圣经根据。</p></div>
+    <div class="mini blood"><h4>约一1:7；5:6–8</h4><p>“他儿子耶稣的血也洗净我们一切的罪”；“作见证的原来有三：就是圣灵、水与血”。</p></div>
+    <div class="mini spirit"><h4>林前12:13</h4><p>“我们……都从一位圣灵受洗，成了一个身体”——问70“作基督的肢体”。</p></div>
+    <div class="mini gold"><h4>加3:27–29</h4><p>“你们受洗归入基督的，都是披戴基督了……就是亚伯拉罕的后裔，是照着应许承受产业的了”——呼应多3:7“后嗣”。</p></div>
+  </div>
+  <div class="key focus"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><div><p class="lab">延伸阅读（信条内）</p><p>海德堡要理问答 主日25（圣礼总论）、主日27（问72及婴孩洗礼）、主日28起（圣餐）；比利时信条第34条（论洗礼）。</p></div></div>
+</section>
+
+<!-- MEMORIZE -->
+<section class="card reveal" id="memorize" aria-labelledby="mem-h">
+  <p class="kicker">一页记住</p>
+  <h2 id="mem-h"><svg class="ic" aria-hidden="true"><use href="#i-brain"/></svg>速记总结</h2>
+  <div class="mnemonic">
+    <div style="background:var(--water-soft);color:var(--water)">水是记号<small>外在 · 基督设立</small></div>
+    <div style="background:var(--crimson-soft);color:var(--crimson)">血是赦免<small>称义 · 白白</small></div>
+    <div style="background:var(--green-soft);color:var(--green)">灵是更新<small>成圣 · 越来越</small></div>
+    <div style="background:var(--gold-soft);color:#6d5420">应许是纽带<small>“正如” · 信心领受</small></div>
+  </div>
+  <div class="grid-2">
+    <div class="mini blood"><h4><svg class="ic-sm" aria-hidden="true"><use href="#i-blood"/></svg> 第一点 · 借着基督的血</h4><p>基督一次流出的血，使我白白得蒙赦罪，正如水洗去身体的污秽一样确实。</p></div>
+    <div class="mini spirit"><h4><svg class="ic-sm" aria-hidden="true"><use href="#i-flame"/></svg> 第二点 · 借着基督的灵</h4><p>基督厚厚浇灌的圣灵更新我，使我作祂的肢体，越来越向罪死、敬虔度日。</p></div>
+  </div>
+  <h3>证经速查表</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>主题</th><th>一节必背</th><th>辅助</th></tr></thead>
+    <tbody>
+      <tr><td><span class="chip water">设立</span></td><td>太28:19</td><td>可16:16</td></tr>
+      <tr><td><span class="chip crimson">血 · 赦罪</span></td><td>弗1:7</td><td>结36:25；亚13:1；来12:24；彼前1:2；启1:5；7:14</td></tr>
+      <tr><td><span class="chip green">灵 · 更新</span></td><td>多3:5–6</td><td>约3:5–8；罗6:4；林前6:11；西2:11–12</td></tr>
+      <tr><td><span class="chip gold">应许重申</span></td><td>徒22:16</td><td>多3:5；徒2:38</td></tr>
+      <tr><td><span class="chip ink">记号≠实体</span></td><td>彼前3:21</td><td>来10:22；问72要点</td></tr>
+      <tr><td><span class="chip violet">感恩生活</span></td><td>多2:11–12</td><td>多2:14；3:8；诗1</td></tr>
+    </tbody>
+  </table></div>
+  <h3>总结列表</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>闭环</th><th>起点</th><th>中心</th><th>终点</th></tr></thead>
+    <tbody>
+      <tr><td>① 救赎历史</td><td>灵在水上（创1:2）</td><td>十字架的血和水</td><td>衣裳在羔羊血中洗白（启7:14）</td></tr>
+      <tr><td>② 圣约</td><td>割礼：信者与后裔</td><td>洗礼：同一恩典之约</td><td>“作我的子民”（结36:28；多2:14）</td></tr>
+      <tr><td>③ 圣经神学</td><td>结36 洒水+新心</td><td>多3 洗+更新</td><td>问70 血+灵</td></tr>
+      <tr><td>④ 罪–恩典–感恩</td><td>一切的污秽</td><td>白白赦罪、圣灵更新</td><td>向罪死、热心行善</td></tr>
+    </tbody>
+  </table></div>
+  <div class="key grace"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><div><p class="lab">一句福音</p><p style="font-size:1.12rem"><strong>我被洗过，所以我知道：基督的血已赦免我，基督的灵正更新我——这不在乎水，而在乎那位不能说谎的神所应许的。</strong></p></div></div>
+</section>
+
+<!-- CLOSING -->
+<section class="card reveal closing" id="closing" aria-labelledby="clo-h">
+  <p class="kicker">结语</p>
+  <h2 id="clo-h"><svg class="ic" aria-hidden="true"><use href="#i-cross"/></svg>回到开头：谁能登耶和华的山？</h2>
+  <p>诗篇24篇问：“谁能登耶和华的山？”答案是“手洁心清的人”。今天我们知道，靠自己没有一个人配。但那位荣耀的王已经进来，用祂的<strong style="color:#f3a5b1">血</strong>洗净我们的罪债，用祂的<strong style="color:#9fe0bb">灵</strong>洗净我们的心。洗礼的水，就是祂在我们身上写下的名字和应许。</p>
+  <p>所以，受洗的弟兄姊妹，不要说“我太脏了”；也不要说“我已经干净，可以随便了”。要说：“我已被洗——所以我要逃离污秽，热心行善，等候所盼望的福和荣耀的显现。”（多2:13；3:8）</p>
+  <p>祷告：天父，感谢你照你的怜悯救了我们，不是因我们所行的义。求你用基督的血使我们的良心平安，用你厚厚浇灌的圣灵天天更新我们，叫我们在今世自守、公义、敬虔度日。奉主耶稣基督的名，阿们。</p>
+</section>
+
+<footer class="card">
+  <p>罪人借着洗礼得洁净 · 海德堡要理问答主日26（问69–71）· 提多书2:11–3:8 · v1 · 2026-10-10</p>
+  <p class="fine">经文引用依和合本大意；地图为示意图，非精确比例。要理问答原文按讲员提供的中文译本照录。</p>
+</footer>
+</main>
+</div>
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var b=document.body, toc=document.getElementById('toc'), btn=document.getElementById('tocBtn');
+  var mq=window.matchMedia('(max-width:980px)');
+  function isMobile(){return mq.matches;}
+  function setBtn(){var open=isMobile()?b.classList.contains('drawer-open'):!b.classList.contains('toc-hidden');btn.setAttribute('aria-expanded',open?'true':'false');}
+  btn.addEventListener('click',function(){ if(isMobile()){b.classList.toggle('drawer-open');}else{b.classList.toggle('toc-hidden');} setBtn();});
+  document.getElementById('tocClose').addEventListener('click',function(){b.classList.remove('drawer-open');setBtn();});
+  document.getElementById('backdrop').addEventListener('click',function(){b.classList.remove('drawer-open');setBtn();});
+  toc.addEventListener('click',function(e){ if(e.target.tagName==='A'&&isMobile()){b.classList.remove('drawer-open');setBtn();}});
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){b.classList.remove('drawer-open');setBtn();}});
+  if(mq.addEventListener){mq.addEventListener('change',setBtn);} setBtn();
+  // progress + to-top
+  var prog=document.getElementById('progress'), top=document.getElementById('toTop'), ticking=false;
+  function onScroll(){var h=document.documentElement, max=h.scrollHeight-h.clientHeight; prog.style.width=(max>0?(h.scrollTop/max*100):0)+'%'; top.classList.toggle('show',h.scrollTop>600); ticking=false;}
+  window.addEventListener('scroll',function(){ if(!ticking){ticking=true;requestAnimationFrame(onScroll);} },{passive:true});
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  // reveal + active toc
+  var links={}; toc.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+    var ao=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting&&links[e.target.id]){ Object.keys(links).forEach(function(k){links[k].classList.remove('active');}); links[e.target.id].classList.add('active'); }});},{rootMargin:'-30% 0px -60% 0px'});
+    Object.keys(links).forEach(function(id){var el=document.getElementById(id); if(el) ao.observe(el);});
+  } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');}); }
+  // motion toggle
+  var mb=document.getElementById('motionBtn');
+  mb.addEventListener('click',function(){var on=b.classList.toggle('still');mb.setAttribute('aria-pressed',on?'true':'false');});
+  // open all
+  var oa=document.getElementById('openAll');
+  oa.addEventListener('click',function(){var ds=document.querySelectorAll('#discussion details'); var any=[].some.call(ds,function(d){return !d.open;}); ds.forEach(function(d){d.open=any;});});
+})();
+</script>
+<style>
+body.still *,body.still *::before,body.still *::after{animation:none!important;transition:none!important}
+body.still .reveal{opacity:1;transform:none}
+body.still .drop-anim .flame{opacity:1}
+</style>
+<!--
+CHECKLIST (v1, 2026-10-10):
+[x] No horizontal overflow: body overflow-x hidden; cards min-width:0 + overflow-wrap:anywhere; tables in .table-wrap (scroll inside own box); wide SVGs in .svg-scroll; grids collapse at 980/767px.
+[x] TOC hides: desktop toggle collapses sidebar (body.toc-hidden); <=980px becomes off-canvas drawer with backdrop, close button, Esc, auto-close on link.
+[x] Two heads present: #head1 借着基督的血; #head2 借着基督的灵 (+ #onechrist mind map).
+[x] Four loops present and labeled: #loop-history, #loop-covenant, #loop-bt, #loop-reformed.
+[x] Q69–71 text exact as supplied (in #catechism).
+[x] No external resources; inline SVG only; prefers-reduced-motion respected; motion toggle.
+-->
+</body>
+</html>
